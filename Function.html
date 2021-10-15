@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <title>Сайт для тренировок</title>
+</head>
+
+<body>
+
+
+    <script>
+
+        var randomWords = ["один", "два", "три", "четыре", "пять"];
+
+        var NewF = function () {
+            console.log ("Ай, хватит");
+            return
+            var pickRandomWord = function (n) {
+                return n[Math.floor(Math.random() * n.length)];
+            };
+            var randomBodyParts = ["глаз", "нос", "череп"];
+            var randomAdjectives = ["вонючая", "унылая", "дурацкая"];
+            var randomWords = ["муха", "выдра", "дубина", "мартышка", "крыса"];
+            // Выбор случайной части тела из массива randomBodyParts:
+            var one = pickRandomWord(randomBodyParts);
+            var two = pickRandomWord(randomAdjectives);
+            var three = pickRandomWord(randomWords);
+
+            var randomInsult = "У тебя " + one + " словно " + two + " " + three + "!!!";
+            return randomInsult
+            
+        }
+        
+        console.log(NewF());
+
+
+    </script>
+
+
+
+
+    <!--
+
+    <script>
+
+
+        var a = prompt("Введите число:")
+        var calc = function (number) {
+            return number * 2
+        };
+
+        console.log(calc(a));
+
+    </script>
+
+
+
+-->
+
+
+
+
+
+
+
+    <!--
+
+ 
+    <script>
+
+        // var name = prompt("What is your name ?");
+        var ourFunction = function (name) {
+
+            console.log("Hello " + name + "!");
+        };
+
+       // ourFunction(name);
+    </script>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    <script>
+        var x = prompt("How much ?");
+        var b = prompt("And What ?");
+        var drawCats = function () {
+            for (i = 0; i < x; i++) {
+                return (i + " " + b);
+            };
+        };
+       // drawCats(x, b);
+
+
+
+    </script>
+ -->
+    <div>
+        <h1>
+            Test page
+        </h1>
+    </div>
+</body>
+
+</html>
