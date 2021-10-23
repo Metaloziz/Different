@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Canvas</title>
+</head>
+
+<body>
+    <canvas id="canvas" width="500" height="500"></canvas>
+    <script>
+        var canvas = document.getElementById("canvas");
+        var ctx = canvas.getContext("2d");
+
+        ctx.lineWidth = 1;
+        ctx.strokeStyle = "green"
+        ctx.beginPath();
+        ctx.arc(150, 150, 05, 0, Math.PI * 2, true)
+        ctx.fill();
+
+        function c(x, y, r) {
+            ctx.lineWidth = 1;
+            ctx.strokeStyle = "green"
+            ctx.beginPath();
+            ctx.arc(x, y, r, 0, Math.PI * 2, true)
+            ctx.stroke();
+        }
+
+        var i = 0.1
+        while (i <= 100) {
+            i += 10
+            c(150, 150, i);
+        }
+
+        // head + body
+        ctx.lineWidth = 3;
+        ctx.strokeStyle = "blue"
+        ctx.beginPath();
+        ctx.arc(300, 290, 30, Math.PI / 2, Math.PI * 2 + Math.PI / 2, false)
+        ctx.arc(300, 360, 40, Math.PI * 2 - Math.PI / 2, Math.PI * 4, false)
+        ctx.stroke();
+
+        //stone
+        //left eye
+        ctx.lineWidth = 3;
+        ctx.beginPath();
+        ctx.arc(310, 280, 5, 0, Math.PI * 2, true)
+        ctx.fill();
+
+        //right eye
+        ctx.lineWidth = 3;
+        ctx.beginPath();
+        ctx.arc(290, 280, 5, 0, Math.PI * 2, true)
+        ctx.fill();
+
+        // 1st stone
+        ctx.lineWidth = 3;
+        ctx.beginPath();
+        ctx.arc(300, 340, 5, 0, Math.PI * 2, true)
+        ctx.fill();
+
+        // 2st stone
+        ctx.lineWidth = 3;
+        ctx.beginPath();
+        ctx.arc(300, 360, 5, 0, Math.PI * 2, true)
+        ctx.fill();
+
+        // 3st stone
+        ctx.lineWidth = 3;
+        ctx.beginPath();
+        ctx.arc(300, 380, 5, 0, Math.PI * 2, true)
+        ctx.fill();
+
+        //nose
+        ctx.beginPath();
+        ctx.lineWidth = 3;
+        ctx.fillStyle = "red";
+        ctx.arc(300, 295, 5, 0, Math.PI * 2, true)
+        ctx.fill();
+
+    </script>
+</body>
+
+</html>
