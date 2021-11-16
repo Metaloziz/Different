@@ -1,8 +1,10 @@
 <!DOCTYPE html>
 <html>
+    
 <head>
     <title>Виселица!</title>
 </head>
+    
 <body>
     <h1>Виселица!</h1>
     <script>
@@ -14,7 +16,6 @@
         "прекрасный",
         "оладушек"
       ];
-
       return words[Math.floor(Math.random() * words.length)];
     };
 
@@ -24,7 +25,6 @@
       for (var i = 0; i < word.length; i++) {
         answerArray[i] = "_";
       }
-
       return answerArray;
     };
 
@@ -50,7 +50,6 @@
           appearances++;
         }
       }
-
       return appearances;
     };
 
@@ -82,8 +81,8 @@
         remainingLetters -= correctGuesses;
       }
     }
-
     showAnswerAndCongratulatePlayer(answerArray);
     </script>
 </body>
+    
 </html>
